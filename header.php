@@ -52,7 +52,7 @@
   				<div id="logo-learn-more"><a href="about">Learn More</a></div>
 				</div>
 				<?php } else { ?>
-				  <a id="logo" class="brief-logo" href="<?php echo home_url(); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-brief.png" width="950" height="100" alt="<?php bloginfo('name'); ?>"></a>
+				  <a id="logo" class="brief-logo" href="<?php echo home_url(); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/logo-brief-<?php echo rand(1,4) ?>.png" width="950" height="100" alt="<?php bloginfo('name'); ?>"></a>
 				  <?php } ?>
 				<nav id="nav-main" class="<?php echo roots_container_class; ?>" role="navigation">
 					<?php wp_nav_menu(array('theme_location' => 'primary_navigation')); ?>

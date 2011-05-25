@@ -16,10 +16,19 @@ h1, h2, h3, h4, h5, h6 { text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 ul.none { margin: 0 0 1.5em 0; padding: 0; list-style: none; }
 .icon { vertical-align: middle; }
 .aligncenter { display: block; margin: 0 auto; }
-img.left, p img.left, .alignleft { margin: 0 1.5em 1em 0; float: left; }
-img.right, p img.right, .alignright { margin: 0 0 1em 1.5em; float: right; }
-.wp-caption { border: 1px solid #ddd; text-align: center; background: #eee; padding: 14px 10px 6px 10px; margin: 15px 10px; }
-.wp-caption-text { margin: 0; }
+img.left, p img.left, .alignleft { border: 5px solid #C2CAD0; margin: 0 1.5em 1em 0; float: left; }
+img.right, p img.right, .alignright { border: 5px solid #C2CAD0; margin: 0 0 1em 1.5em; float: right; }
+.wp-caption { 
+  border: 1px solid #BCC; 
+  text-align: center; 
+  background: #FFF; 
+  padding: 14px 10px 6px 10px; 
+  margin: 15px auto; 
+  -webkit-box-shadow: 0px 0px 4px #AAB;
+  -moz-box-shadow:    0px 0px 4px #AAB;
+  box-shadow:         0px 0px 4px #AAB;
+  }
+.wp-caption-text { font-size: 13px; margin: 0; }
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .hidden { display: none; visibility: hidden; }
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
@@ -136,7 +145,7 @@ width: 440px;}
 #nav-main ul li a { 
 	text-decoration: none; 
 	display: block; 
-	font-size: 14px; 
+	font-size: 15px; 
 	padding: 8px 16px; 
 	color: #fff; 
 	margin: 0; 
@@ -196,11 +205,11 @@ width: 440px;}
 #content .container { width: auto; position: relative; padding: 0; }
 
 #main { position: relative; }
-#main h1 {border-bottom: 1px dotted #DDD; color: #06f; display: block; font-family: 'Arvo', 'Times New Roman', Times, serif; font-size: 32px; font-weight: 400; padding-bottom: 0.67em;}
+#main h1 {border-bottom: 1px dotted #DDD; color: #306796; display: block; font-family: 'Arvo', 'Times New Roman', Times, serif; font-size: 32px; font-weight: 400; padding-bottom: 0.67em;}
 #main h2 {color: #234; font-size: 24px; margin-bottom: 0.5em;}
 #main .container { padding: 0 1em 0 2em; font-size: 15px;}
 
-.home #main img {margin-top: 5px;}
+.home #main img {border: none !important; margin-top: 5px;}
 
 /* Posts */
 .hentry header { margin-bottom: 1.5em; }
@@ -260,7 +269,7 @@ figure.gallery-item figcaption { display: none; }
 /* FOOTER
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
 #content-info { 
-  background: url('../img/footer-texture.png') repeat scroll 0 0 #013; 
+  background: url('../img/footer-texture.png') repeat scroll 0 0 #013;
   border-top: 4px solid #111;
   border-bottom: 2px solid #111; 
   clear: both; 
@@ -270,11 +279,11 @@ figure.gallery-item figcaption { display: none; }
   box-shadow:          0px -3px 6px rgba(88, 88, 88, 0.3);
   
   }
-#content-info > .container { padding: 3em 0 4em; }
-#content-info .container h3 {border-right: 1px solid #1A2F53; color: #adf; float: left; font-family: "Arvo", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 90px; margin: 0 0 0 2em; padding-right: 2em;}
+#content-info > .container { padding: 1.5em 0 2.5em; }
+#content-info .container h3 {border-right: 1px solid #1A2F53; color: #adf; float: left; font-family: "Arvo", "Helvetica Neue", Arial, sans-serif; font-size: 18px; line-height: 54px; margin: 0 0 0 2em; padding-right: 1em;}
 #content-info .container .textwidget {float: left;}
-#content-info .textwidget ul {margin: 0 1.5em 1.5em 0; width: 600px;}
-#content-info .textwidget li {display: block; float: left; line-height: 24px; margin-left: 2em; padding: 0.25em 30px 0.25em 0; width: 240px;}
+#content-info .textwidget ul {margin: 0 1.5em 1.5em 0; width: 720px;}
+#content-info .textwidget li {display: block; float: left; line-height: 18px; margin-left: 0.25em; padding: 0.25em 20px 0.5em 0; width: 215px;}
 #content-info .textwidget li a {
   color: #DEE5F8; 
   font-family: "Arvo", "Helvetica Neue", Arial, sans-serif;
@@ -285,8 +294,8 @@ figure.gallery-item figcaption { display: none; }
   text-shadow:         0px -1px 0px #000;
   }
 #content-info .textwidget li a:hover { color: #FFF;}
-#content-info .copyright-message {color: #67a4df; position: absolute; bottom: 5px; right: 10px;}
-#content-info .copyright-message a {color: #67a4df; text-decoration: underline;}
+#content-info .copyright-message {color: #7AC; font-size: 10px; position: absolute; bottom: 5px; right: 10px;}
+#content-info .copyright-message a {color: #7AC; text-decoration: underline;}
 
 #content-info ul.menu { margin: 0 0 24px; padding: 0; list-style-type: none; }
 #content-info ul.menu li { display: inline; margin-right: 1em; }
